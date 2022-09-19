@@ -55,6 +55,10 @@ for elem in elems:
             city_hotel_Id= find_hotel_id(link['href'])
             city_name = city_name
             city_hotel_link = "https://www.kayak.co.in" + link['href']
+            print("city name = " + city_name)
+            print("city hotel id = "+city_hotel_Id)
+            print("city hotel link = "+ city_hotel_link)
+            print("--------------------------------------------------------------------")
             # insert city hotel information into databases
             sql = "INSERT INTO Hotels_All_City (city_name, city_hotel_id, hrf_link) VALUES (%s, %s, %s)"
             val = (city_name, city_hotel_Id, city_hotel_link)
@@ -76,6 +80,10 @@ for hotel in all_hotels:
         hotelId= find_hotel_id(href)
         hotel_name = hotel_name
         hotel_link = href
+        print("hotel name = " + hotel_name)
+        print("hotel id = "+ hotelId)
+        print("hotel link = "+ hotel_link)
+        print("--------------------------------------------------------------------")
         #  insert city hotel information into databases
         sql = "INSERT INTO Single_City_Hotel_List (hotel_name, hotel_id, hrf_link) VALUES (%s, %s, %s)"
         val = (hotel_name, hotelId, hotel_link)
@@ -99,6 +107,10 @@ for script in scripts:
                     image_sourse =  content['contentUrl']
                     label =  content['description']
                     index = index + 1
+                    print("hotel name = " + hotel_name)
+                    print("image source = "+ image_sourse)
+                    print("image label = "+ label)
+                    print("--------------------------------------------------------------------")
                     sql = "INSERT INTO Hotel_With_Image_Details (hotel_id, hotel_name, image_link, label) VALUES (%s, %s, %s, %s)"
                     val = (hotel_id, hotel_name, image_sourse, label)
                     cursor.execute(sql, val)

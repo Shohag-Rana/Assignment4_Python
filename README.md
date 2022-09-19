@@ -57,7 +57,7 @@ git push -u origin main
 
 ## Feature of this Project
 
-- Scrap the data from given site and store it into data
+- Scrap the data from given site and store it into database
 - Scrap the image from the javascript json file
 
 ## Conculation

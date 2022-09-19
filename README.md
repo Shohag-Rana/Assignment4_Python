@@ -23,6 +23,16 @@ In this web scraping project we use python beautifulsoup package. we scrap data 
  - pip install requests
  - python -m pip install mysql-connector-python 
  - Phpmyadmin localhost
+ 
+ ## SQL Queries
+
+ - import mysql.connector
+ - mydb = mysql.connector.connect(host="localhost",user="root",password="root123456")
+ - mycursor = mydb.cursor()
+ - cursor.execute("CREATE DATABASE kayakHotelDB") 
+ - cursor.execute("CREATE TABLE Hotels_All_City (city_name VARCHAR(255), city_hotel_id VARCHAR(255), hrf_link VARCHAR(255))")
+ - cursor.execute("CREATE TABLE Single_City_Hotel_List (hotel_name VARCHAR(255), hotel_id VARCHAR(255), hrf_link VARCHAR(255))")
+ - cursor.execute("CREATE TABLE Hotel_With_Image_Details (hotel_id VARCHAR(255), hotel_name VARCHAR(255), image_link VARCHAR(255), label VARCHAR(255))")
 
 
 ## Github Deployment Command
@@ -50,6 +60,7 @@ git push -u origin main
 - Scrap the data from given site and store it into data
 - Scrap the image from the javascript json file
 
-
+## Conculation
+ - In this web scraping project we use python programming language and it's packages beautifulsoup4, requests and MySQL databases. the image data extract from the javascript json file. Hope that all is ok.
 
 

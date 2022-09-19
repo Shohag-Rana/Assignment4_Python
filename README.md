@@ -1,7 +1,7 @@
 
 # Web Scraping Python Project
 
-In this web scraping project we use python beautifulsoup package. we scrap data from the https://www.kayak.co.in/?ispredir=true this site. we scrap data from this site categories with city hotel and save into data base table all_city_hotel. then choose one city hotel and extract all the link of hotel and save into database single_city_hotel table. then choose one hotel from this second page and scrap all the image and save into database.
+In this web scraping project we use python beautifulsoup package. we scrap data from the https://www.kayak.co.in/?ispredir=true this site. we scrap data from this site categories with city hotel and save into data base table all_city_hotel. then choose one city hotel from all_city_hotel and extract all the link of hotel and save into database single_city_hotel table. then choose one hotel from single_city_hotel and scrap all the image and save into database.
 
 
 ## Technology and Tools
